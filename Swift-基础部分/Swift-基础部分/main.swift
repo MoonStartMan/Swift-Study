@@ -89,3 +89,24 @@ if assumedString != nil {
 if let definiteString = assumedString {
     print(definiteString)
 }
+
+/**
+    错误处理
+ */
+
+func canThrowAnError() throws {
+    //  这个函数有可能抛出错误
+}
+
+do {
+    try canThrowAnError()
+    //  没有错误消息弹出
+} catch {
+    //  有一个错误消息弹出
+}
+
+/** 断言 */
+let age = -3
+assert(age >= 0, "A person's age cannot be less than zero")
+
+//precondition(index > 0, "Index must be greater than zero.")
