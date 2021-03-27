@@ -15,3 +15,5 @@ It's my Swift-study respository
 ## Swift-函数
 
 ## Swift-闭包
+
+## Swift-枚举
