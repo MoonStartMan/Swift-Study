@@ -17,3 +17,5 @@ It's my Swift-study respository
 ## Swift-闭包
 
 ## Swift-枚举
+
+## Swift-属性
