@@ -19,3 +19,9 @@ It's my Swift-study respository
 ## Swift-枚举
 
 ## Swift-属性
+
+## Swift-方法
+
+## Swift-下标
+
+## Swift-继承
