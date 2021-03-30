@@ -25,3 +25,5 @@ It's my Swift-study respository
 ## Swift-下标
 
 ## Swift-继承
+
+## Swift-构造过程
