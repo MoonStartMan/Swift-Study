@@ -305,3 +305,204 @@ for item in breakfastList {
 /**
     可失败构造器
  */
+
+//  失败：给构造器传入无效的形参，或缺少某种所需的外部资源，又或是不满足某种必要的条件等。
+
+let wholeNumber: Double = 12345.0
+let pi = 3.14159
+
+if let valueMaintained = Int(exactly: wholeNumber) {
+    print("\(wholeNumber) conversion to Int maintains value of \(valueMaintained)")
+}
+
+let valueChanged = Int(exactly: pi)
+
+if valueChanged == nil {
+    print("\(pi) conversion to Int does not maintain value")
+}
+
+struct Animal {
+    let species: String
+    init?(species: String) {
+        if species.isEmpty {
+            return nil
+        }
+        self.species = species
+    }
+}
+
+let someCareature = Animal(species: "Giraffe")
+
+if let giraffe = someCareature {
+    print("An animal was initialized with a species of \(giraffe.species)")
+}
+
+let anonymousCreature = Animal(species: "")
+
+//let anonymousCreature == nil {
+//    print("The anonymous creature could not be initialized")
+//}
+
+/**
+    枚举类型的可失败构造器
+ */
+
+enum TemperatureUnit {
+    case Kvlvin, Celsius, Fahreheit
+    init?(symbol: Character) {
+        switch symbol {
+        case "K":
+            self = .Kvlvin
+        case "C":
+            self = .Celsius
+        case "F":
+            self = .Fahreheit
+        default:
+            return nil
+        }
+    }
+}
+
+let fahrenheitUnit = TemperatureUnit(symbol: "F")
+if fahrenheitUnit != nil {
+    print("This is a defined temperature unit, so initizlization succeeded.")
+}
+//  打印"This is a defined temperature unit, so initialization succeeded."
+
+let unknownUnit = TemperatureUnit(symbol: "X")
+if unknownUnit == nil {
+    print("This is not a defined temperature unit, so initialization failed.")
+}
+//  打印"" This is not a defined temperature unit, so initialization failed.
+
+//enum TemperatureUnit: Character {
+//    case kelvin = "K", Celsius = "C", Fahreheit = "F"
+//}
+
+//let fahrenheitUnit = TemperatureUnit(rawValue: "F")
+if fahrenheitUnit != nil {
+    print("This is a defined temperature unit, so initizlization succeeded.")
+}
+
+if unknownUnit == nil {
+    print("This is not a defined temperature unit, so initialization failed.")
+}
+
+/**
+    构造失败的传递
+ */
+
+class Product {
+    let name: String
+    init?(name: String) {
+        if name.isEmpty { return nil }
+        self.name = name
+    }
+}
+
+class CartItem: Product{
+    let quantity: Int
+    init?(name: String, quantity: Int) {
+        if quantity < 1 { return nil }
+        self.quantity = quantity
+        super.init(name: name)
+    }
+}
+
+if let twoSocks = CartItem(name: "sock", quantity: 2) {
+    print("Item: \(twoSocks.name), quantity: \(twoSocks.quantity)")
+}
+
+if let zeroShirts = CartItem(name: "shirt", quantity: 0) {
+    print("Item: \(zeroShirts.name), quantity: \(zeroShirts.quantity)")
+} else {
+    print("Unable to initialize zero shirts")
+}
+
+if let oneUnnamed = CartItem(name: "", quantity: 1) {
+    print("Item: \(oneUnnamed.name), quantity: \(oneUnnamed.quantity)")
+} else {
+    print("Unable to initalize one unnamed product")
+}
+
+/**
+    重写一个可失败构造器
+ */
+
+class Document {
+    var name: String?
+    //  该构造器创建了一个 name 属性的值为nil 的 document 实例
+    init () {}
+    //  该构造器创建了一个 name 属性的值为非空字符串的 document 实例
+    init?(name: String) {
+        if name.isEmpty { return nil }
+        self.name = name
+    }
+}
+
+class AutomaticallyNamedDocument: Document {
+    override init() {
+        super.init()
+        self.name = "[Untitled]"
+    }
+    override init(name: String) {
+        super.init()
+        if name.isEmpty {
+            self.name = "[Untitled]"
+        } else {
+            self.name = name
+        }
+    }
+}
+
+class UntitledDocument: Document {
+    override init() {
+        super.init(name: "[Untitled]")!
+    }
+}
+
+/**
+    必要构造器
+ */
+
+//class SomeClass {
+//    required init() {
+//        //  构造器的实现代码
+//    }
+//}
+
+/**
+    通过闭包或函数设置属性的默认值
+ */
+
+//class SomeClass {
+//    let someProperty: SomeType = {
+//        //  在这个闭包中给 someProperty 创建一个默认值
+//        //  someValue 必须和 SomeType 类型相同
+//        return someValue
+//    }()
+//}
+
+struct Chessboard {
+    let boardColors : [Bool] = {
+        var temporaryBoard = [Bool]()
+        var isBlack = false
+        for i in 1...8 {
+            for j in 1...8 {
+                temporaryBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+        }
+        return temporaryBoard
+    }()
+    func squareIsBlackAt(row: Int, column: Int) -> Bool {
+        return boardColors[(row * 8) + column]
+    }
+}
+
+let board = Chessboard()
+print(board.squareIsBlackAt(row: 0, column: 1))
+//  打印"true"
+print(board.squareIsBlackAt(row: 7, column: 7))
+//  打印"false"
