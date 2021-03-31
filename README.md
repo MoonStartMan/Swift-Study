@@ -27,3 +27,5 @@ It's my Swift-study respository
 ## Swift-继承
 
 ## Swift-构造过程
+
+## Swift-析构过程
