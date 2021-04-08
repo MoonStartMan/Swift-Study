@@ -39,3 +39,9 @@ It's my Swift-study respository
 ## Swift-嵌套类型
 
 ## Swift-扩展
+
+## Swift-协议
+
+## Swift-泛型
+
+## Swift-自动引用计数
