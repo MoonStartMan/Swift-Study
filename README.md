@@ -45,3 +45,5 @@ It's my Swift-study respository
 ## Swift-泛型
 
 ## Swift-自动引用计数
+
+## Swift-内存安全
