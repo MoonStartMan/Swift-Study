@@ -176,6 +176,21 @@ It's my Swift-study respository
 
 [闭包](站在汇编角度深入学习Swift/13-汇编分析闭包本质/闭包.md)
 
+### 14-汇编分析属性、inout本质
+
+#### 属性
+
+[属性](站在汇编角度深入学习Swift/14-汇编分析属性、inout本质/属性.md)
+
 #### 枚举rawValue原理
 
-[枚举rawValue原理](站在汇编角度深入学习Swift/13-汇编分析闭包本质/枚举rawValue原理.md)
+[枚举rawValue原理](站在汇编角度深入学习Swift/14-汇编分析属性、inout本质/枚举rawValue原理.md)
+
+#### 延迟存储属性
+
+[延迟存储属性](站在汇编角度深入学习Swift/14-汇编分析属性、inout本质/延迟存储属性.md)
+
+#### 属性观察器
+
+[属性观察器](站在汇编角度深入学习Swift/14-汇编分析属性、inout本质/属性观察器.md)
+

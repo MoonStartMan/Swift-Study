@@ -69,7 +69,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306AE8332612B388004A49E6 /* Build configuration list for PBXNativeTarget "Swift-下标" */;
 			buildPhases = (
-				E5FE93D275568D1D5B6D902C /* Build Assets Catalog */,
+				AC3FCE2A3E2A6CFC4C6D902C /* Build Project Frameworks */,
 				306AE8282612B388004A49E6 /* Sources */,
 				306AE8292612B388004A49E6 /* Frameworks */,
 				306AE82A2612B388004A49E6 /* CopyFiles */,
@@ -290,7 +290,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	E5FE93D275568D1D5B6D902C /* Build Assets Catalog */ = {
+	AC3FCE2A3E2A6CFC4C6D902C /* Build Project Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +299,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Assets Catalog";
+			name = "Build Project Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -389,6 +389,24 @@
 	
 
 	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 		
 	
 		/* End PBXShellScriptBuildPhase section */
@@ -397,6 +415,10 @@
 
 		
 			/* Begin PBXBuildRule section */
+
+
+			
+	
 
 
 			
