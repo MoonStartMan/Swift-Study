@@ -222,3 +222,17 @@ It's my Swift-study respository
 #### 初始化
 
 [初始化](站在汇编角度深入学习Swift/16-汇编分析多态原理、初始化、可选链/初始化.md)
+
+### 17-init、deinit、可选链、协议、元类型
+
+#### required
+
+[required](站在汇编角度深入学习Swift/17-init、deinit、可选链、协议、元类型/required.md)
+
+#### 属性观察器
+
+[属性观察器](站在汇编角度深入学习Swift/17-init、deinit、可选链、协议、元类型/属性观察器.md)
+
+#### 可失败初始化器
+
+[可失败初始化器](站在汇编角度深入学习Swift/17-init、deinit、可选链、协议、元类型/可失败初始化器.md)
