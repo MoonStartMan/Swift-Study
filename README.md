@@ -236,3 +236,11 @@ It's my Swift-study respository
 #### 可失败初始化器
 
 [可失败初始化器](站在汇编角度深入学习Swift/17-init、deinit、可选链、协议、元类型/可失败初始化器.md)
+
+#### 反初始化器(deinit)
+
+[反初始化器(deinit)](站在汇编角度深入学习Swift/17-init、deinit、可选链、协议、元类型/反初始化器(deinit).md)
+
+#### 可选链
+
+[可选链](站在汇编角度深入学习Swift/17-init、deinit、可选链、协议、元类型/可选链.md)

