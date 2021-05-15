@@ -69,7 +69,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A7CC5126145D5200C9068C /* Build configuration list for PBXNativeTarget "Swift-可选链" */;
 			buildPhases = (
-				C27B7ADED5FF3762406D902C /* Build Assets Catalog */,
+				C4270D201DC7F4965A6D902C /* Build Assets Catalog */,
 				30A7CC4626145D5200C9068C /* Sources */,
 				30A7CC4726145D5200C9068C /* Frameworks */,
 				30A7CC4826145D5200C9068C /* CopyFiles */,
@@ -340,7 +340,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	C27B7ADED5FF3762406D902C /* Build Assets Catalog */ = {
+	C4270D201DC7F4965A6D902C /* Build Assets Catalog */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,6 +360,24 @@
 
 \"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	

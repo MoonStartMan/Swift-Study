@@ -69,7 +69,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306AE8332612B388004A49E6 /* Build configuration list for PBXNativeTarget "Swift-下标" */;
 			buildPhases = (
-				DDCF62EB5DF510E8F56D902C /* [CP] Build Pods Frameworks */,
+				76EF699BBBCBA81A7B6D902C /* [CP] Build Pods Frameworks */,
 				306AE8282612B388004A49E6 /* Sources */,
 				306AE8292612B388004A49E6 /* Frameworks */,
 				306AE82A2612B388004A49E6 /* CopyFiles */,
@@ -290,7 +290,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	DDCF62EB5DF510E8F56D902C /* [CP] Build Pods Frameworks */ = {
+	76EF699BBBCBA81A7B6D902C /* [CP] Build Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,6 +437,22 @@
 	
 
 	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 		
 	
 		/* End PBXShellScriptBuildPhase section */
@@ -445,6 +461,10 @@
 
 		
 			/* Begin PBXBuildRule section */
+
+
+			
+	
 
 
 			
