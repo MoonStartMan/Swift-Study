@@ -28,7 +28,7 @@ default:
 大致意思为:switch必须要详尽。
 
 + case、default后面至少要有一条语句
-+ 如果不想做任何事，价格break即可
++ 如果不想做任何事，加个break即可
 
 ## 注意点
 
